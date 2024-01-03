@@ -1,0 +1,46 @@
+--
+-- entity name: g44_ARCCOS
+--
+-- Version 1.0
+-- Authors: William Zhang and Qin Xuan Xu
+-- Date: March ??, 2023 (enter the date of the latest edit to the file)
+library ieee; -- allows use of the std_logic_vector type
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; -- needed since you are using unsigned numbers
+entity g44_ARCCOS is
+port ( X : in std_logic_vector(7 downto 0);
+CLOCK : in std_logic;
+ANGLE : out std_logic_vector(9 downto 0));
+end g44_ARCCOS;
+
+architecture g44_ARCCOS of g44_ARCCOS is
+signal Result1 : unsigned(31 downto 0);
+signal Result2 : unsigned(23 downto 0);
+signal X2 : unsigned(15 downto 0);
+signal P1 : unsigned(15 downto 0);
+signal S1 : unsigned(15 downto 0);
+signal P2 : unsigned(15 downto 0);
+signal S2 : unsigned(15 downto 0);
+signal P3 : unsigned(14 downto 0);
+signal VAR1 : unsigned(15 downto 0) := "0000000001010110";
+signal VAR2 : unsigned(15 downto 0) := "0000000010111111";
+signal VAR3 : unsigned(15 downto 0) := "0000010001111000";
+
+
+begin
+	process(CLOCK)
+	begin
+		if rising_edge(CLOCK) then 
+			X2 <=  (unsigned(X) * unsigned(X));
+			Result1 <= (VAR1 * X2);
+			P1 <= Result1(31 downto 16);
+			S1 <= VAR2 + P1;
+			Result1 <= S1 * X2(15 downto 0);
+			P2 <= Result1(31 downto 16);
+			S2 <= VAR3 + P2;
+			Result2 <= S2 * unsigned(X);
+			P3 <= Result2(23 downto 9);
+			ANGLE <= std_logic_vector(900-P3(9 downto 0));
+		end if;
+	end process;
+end g44_ARCCOS;	

@@ -1,0 +1,225 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rled_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rled_export[9]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segment0_conduit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segment1_conduit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segment2_conduit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segment3_conduit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbuttons_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_export[9]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+--
+-- entity name: g44_7_segment_decoder
+--
+-- Version 1.0
+-- Authors: William Zhang and Qin Xuan Xu
+-- Date: March 31, 2023 (enter the date of the latest edit to the file)
+library ieee; -- allows use of the std_logic_vector type
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; -- needed since you are using unsigned numbers
+entity g44_7_segment_decoder is 
+port( value : in std_logic_vector(3 downto 0);
+		RB_In : in std_logic;
+		RB_Out : out std_logic;
+		segments : out std_logic_vector(6 downto 0));
+		end g44_7_segment_decoder
+		
+architecture a of g_44_7_segment_decoder is
+Begin
+segments <= "1000000" when value = "0000" else\
+				"1111001" when value = "0001" else
+				"0100100" when value = "0010" else
+				"0110000" when value = "0011" else
+				"0011001" when value = "0100" else
+				"0010010" when value = "0101" else
+				"0000010" when value = "0110" else
+				"1111000" when value = "0111" else
+				"0000000" when value = "1000" else
+				"0010000" ;
+end a;

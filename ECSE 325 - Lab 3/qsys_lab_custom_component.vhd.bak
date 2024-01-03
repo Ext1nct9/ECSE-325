@@ -1,0 +1,32 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY qsys_lab_custom_component IS
+PORT (
+	clock, resetn : IN STD_LOGIC;
+	write, chipselect : IN STD_LOGIC;
+	address : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+	writedata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+	segments1, segments2, segments3, segments4 : out std_logic_vector(6 downto 0)
+);
+END qsys_lab_custom_component;
+
+ARCHITECTURE Structure OF qsys_lab_custom_component IS
+SIGNAL to_component : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+COMPONENT g17_executor 
+port ( 
+			X : in std_logic_vector(7 downto 0);
+			Clock : in std_logic;
+			decoded_bit_0 : out std_logic_vector(6 downto 0); 
+			decoded_bit_1 : out std_logic_vector(6 downto 0); 
+			decoded_bit_2 : out std_logic_vector(6 downto 0); 
+			decoded_bit_3 : out std_logic_vector(6 downto 0)
+		);
+end Component;
+
+begin
+to_component <= writedata(7 downto 0);
+g17_executor_component:  g17_executor PORT MAP (to_component, clock, segments1,  segments2,  segments3,  segments4);
+end Structure;
+
